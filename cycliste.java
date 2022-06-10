@@ -3,9 +3,19 @@ public class Cycliste {
     String name;
     String lastname;
     int dossart;
-    int datedebut;
+    int datedebut= 0;
     int datefin;   
 
+
+    public Cycliste(String name, String lastname, int dossart, int datefin) {
+        this.name = name;
+        this.lastname = lastname;
+        this.dossart = dossart;
+        
+        this.datefin = datefin;
+    }
+
+  
 
     public String getName() {
         return this.name;
@@ -31,13 +41,7 @@ public class Cycliste {
         this.dossart = dossart;
     }
 
-    public int getDatedebut() {
-        return this.datedebut;
-    }
-
-    public void setDatedebut(int datedebut) {
-        this.datedebut = datedebut;
-    }
+    
 
     public int getDatefin() {
         return this.datefin;
@@ -47,9 +51,6 @@ public class Cycliste {
         this.datefin = datefin;
     }
 
-    
-    
-   
     void abandonner(){
         this.datefin= 0;
     }
