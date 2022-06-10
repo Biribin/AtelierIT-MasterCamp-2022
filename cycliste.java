@@ -1,4 +1,4 @@
-public class Cycliste {
+public class Cycliste{
     
     String name;
     String lastname;
@@ -7,15 +7,18 @@ public class Cycliste {
     int datefin;   
 
 
-    public Cycliste(String name, String lastname, int dossart, int datefin) {
+
+    public Cycliste(String name, String lastname, int dossart, int datedebut, int datefin) {
         this.name = name;
         this.lastname = lastname;
         this.dossart = dossart;
-        
+        this.datedebut = datedebut;
         this.datefin = datefin;
     }
-
-  
+    
+    public Cycliste(){
+        
+    }
 
     public String getName() {
         return this.name;
